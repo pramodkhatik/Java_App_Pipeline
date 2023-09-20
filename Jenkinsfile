@@ -21,7 +21,7 @@ stages {
         steps{
             script{
               withSonarQubeEnv(credentialsId: 'Sonar') {
-                  sh 'mvn clean install sonar:sonar'
+                  sh 'mvn clean package sonar:sonar'
 }
             }
         }
