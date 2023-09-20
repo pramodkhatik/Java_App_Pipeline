@@ -15,6 +15,7 @@ stages {
         agent{
             docker {
                 image 'maven'
+                reuseNode true
             }
         }
         steps{
