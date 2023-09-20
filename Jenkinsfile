@@ -13,7 +13,7 @@ stages {
     }
     stage('Sonar Quality Check'){
         agent{
-            docker{
+            docker {
                 image 'maven'
             }
         }
